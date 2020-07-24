@@ -32,3 +32,14 @@ global detection_pub
 #line 66
 detection_pub = rospy.Publisher("object_detection/detection",object_detection,queue_size=0)
 ```
+
+object_detection.msg
+```
+int16 min_x
+int16 max_x
+int16 min_y
+int16 max_y
+string class
+float32 probability
+string source
+```
