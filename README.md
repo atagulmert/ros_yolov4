@@ -5,7 +5,8 @@ an implementation of Yolov4 algorithm to ROS using darknet framework and a pytho
 
 In detection.py configure your cfg, data and weight file locations on those lines; 
 
-```detector = pyyolo.YOLO(pkg_path+"/src/cfg/yolov4.cfg", # cfg file location
+```
+detector = pyyolo.YOLO(pkg_path+"/src/cfg/yolov4.cfg", # cfg file location
                            pkg_path+"/src/yolov4.weights", # weight file location
                            pkg_path+"/src/cfg/coco.data", # data file location
                            detection_threshold = 0.5,
