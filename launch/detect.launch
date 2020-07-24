@@ -1,0 +1,22 @@
+<launch>
+
+    <node name="detector_1" pkg="mm_object_detection" type="detection.py" output="screen">
+        <remap from="camera/data" to="/wamv/sensors/cameras/middle_right_camera/image_raw"/>
+        <remap from="detection/output" to="/wamv/sensors/cameras/middle_right_camera/image_raw/detections"/>
+    </node>
+
+    <node name="detector_2" pkg="mm_object_detection" type="detection.py" output="screen">
+        <remap from="camera/data" to="/wamv/sensors/cameras/middle_camera/image_raw"/>
+        <remap from="detection/output" to="/wamv/sensors/cameras/middle_camera/image_raw/detections"/>
+    </node>
+  <!--  
+    <node name="detector_3" pkg="mm_object_detection" type="detection.py" output="screen">
+        <remap from="camera/data" to="/wamv/sensors/cameras/front_right_camera/image_raw/"/>
+    </node>
+
+    <node name="detector_4" pkg="mm_object_detection" type="detection.py" output="screen">
+        <remap from="camera/data" to="/wamv/sensors/cameras/front_left_camera/image_raw/"/>
+    </node>
+  -->
+
+</launch>
