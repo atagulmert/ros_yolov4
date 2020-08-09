@@ -1,5 +1,5 @@
 # ros_yolov4
-an implementation of Yolov4 algorithm to ROS using darknet framework and a python wrapper (PyYOLO)
+an implementation of Yolov4 algorithm to ROS using darknet framework and a python wrapper ([PyYOLO](https://github.com/goktug97/PyYOLO))
 
 # How to use
 
